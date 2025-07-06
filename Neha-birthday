@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Neha 🎉</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #e60073;
+      animation: bounce 2s infinite;
+    }
+    p {
+      font-size: 1.3rem;
+      color: #333;
+      margin-top: 30px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 5s linear infinite;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { top: 0; left: -10px; }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <div class="heart" style="left:10%; animation-delay:0s;"></div>
+    <div class="heart" style="left:30%; animation-delay:1s;"></div>
+    <div class="heart" style="left:50%; animation-delay:2s;"></div>
+    <div class="heart" style="left:70%; animation-delay:3s;"></div>
+    <div class="heart" style="left:90%; animation-delay:4s;"></div>
+  </div>
+
+  <h1>Happy Birthday Neha 🎂🎈</h1>
+  <p>From the deepest part of my heart, I wish you a day full of smiles, surprises, and sweet memories.<br>  
+     You are not just special… you are *my special*. 💕</p>
+
+  <p style="margin-top:50px;"><strong>👇 Click below to open your gift 👇</strong></p>
+  <a href="https://neha2025-chatbot.netlify.app" target="_blank" style="font-size: 1.2rem; color: #e60073;">🎁 His Digital Heart</a>
+</body>
+</html>
